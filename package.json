@@ -1,0 +1,29 @@
+{
+  "name": "docker-deploy-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdadam/docker-deploy-template.git"
+  },
+  "keywords": [],
+  "author": "Adam Beres-Deak <me@bdadam.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdadam/docker-deploy-template/issues"
+  },
+  "homepage": "https://github.com/bdadam/docker-deploy-template#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "nedb": "^1.8.0",
+    "nedb-promise": "^2.0.1",
+    "nodemon": "^1.11.0",
+    "pug": "^2.0.0-rc.1"
+  }
+}
