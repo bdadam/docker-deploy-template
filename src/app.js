@@ -67,3 +67,14 @@ app.put('/api/data/:_id', bodyParser.json({}), (req, res) => {
 });
 
 module.exports = app;
+
+const jwt = require('jsonwebtoken');
+const token = jwt.sign({ userid: '12345', test: 'TEST' }, 'secret', { expiresIn: '30 days', issuer: 'test issuer' });
+// const token = jwt.sign({ userid: '12345', test: 'TEST', iat: 1000 }, 'secret', { expiresIn: '30 days', issuer: 'test issuer' });
+// const token = jwt.sign({ userid: '12345', test: 'TEST' }, 'secret', { expiresIn: '30 days', issuer: 'test issuer unknown' });
+console.log(token);
+
+jwt.verify(token, 'secret', { issuer: 'test issuer', expiresIn: '30 days' }, (err, res) => {
+    console.log(err);
+    console.log(res);
+});
