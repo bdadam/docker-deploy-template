@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GET / HTML Snapshot 1`] = `
+<html>
+  
+  <head>
+    <title>Test Title This is</title>
+  </head>
+  
+  <body>
+    <h1>Test Title</h1>
+    <form id="dataform">
+      <textarea name="text" rows="6" cols="80"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="/static/main.js"></script>
+  </body>
+
+</html>
+`;
+
+exports[`GET / Headers 1`] = `
+Object {
+  "connection": "close",
+  "content-length": "246",
+  "content-type": "text/html; charset=utf-8",
+  "date": "dontcare",
+  "etag": "W/\\"f6-CHGMN5LVldUHa8rcr+XbzVAzO5U\\"",
+  "server-timing": "dontcare",
+}
+`;
