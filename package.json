@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.js",
-    "test": "mocha -c",
-    "jest": "jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,9 +19,11 @@
   },
   "homepage": "https://github.com/bdadam/docker-deploy-template#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "chai": "^4.0.0",
     "chai-http": "^3.0.0",
+    "cheerio": "^1.0.0-rc.1",
     "express": "^4.15.3",
     "express-graphql": "^0.6.6",
     "graphql": "^0.10.1",

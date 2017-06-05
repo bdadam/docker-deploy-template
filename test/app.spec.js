@@ -18,9 +18,4 @@ describe('GET /', () => {
     it('HTML Snapshot', () => {
         expect(response.text).toMatchSnapshot();
     });
-
-    it('Headers', () => {
-        const hds = Object.assign({}, response.headers, { date: 'dontcare', 'server-timing': 'dontcare' });
-        expect(hds).toMatchSnapshot();
-    });
 });
