@@ -13,19 +13,8 @@ exports[`GET / HTML Snapshot 1`] = `
       <textarea name="text" rows="6" cols="80"></textarea>
       <button type="submit">Submit</button>
     </form>
-    <script src="/static/main.js"></script>
+    <script src="/static/main.js?qweq12324"></script>
   </body>
 
 </html>
-`;
-
-exports[`GET / Headers 1`] = `
-Object {
-  "connection": "close",
-  "content-length": "246",
-  "content-type": "text/html; charset=utf-8",
-  "date": "dontcare",
-  "etag": "W/\\"f6-CHGMN5LVldUHa8rcr+XbzVAzO5U\\"",
-  "server-timing": "dontcare",
-}
 `;

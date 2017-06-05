@@ -1,13 +1,11 @@
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
-const datastore = require('nedb-promise');
 
 const port = process.env.PORT || 3000;
 const app = express();
 
-const dbpath = './data/test.db';
-const db = datastore({ filename: dbpath, autoload: true });
+const db = require('./db');
 
 app.disable('x-powered-by');
 app.engine('pug', require('pug').__express);
