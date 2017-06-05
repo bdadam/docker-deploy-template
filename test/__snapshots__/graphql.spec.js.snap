@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GET / Works 1`] = `
+Object {
+  "data": Object {
+    "test": Object {
+      "id": "1234",
+      "name": "Test name",
+    },
+  },
+}
+`;
+
+exports[`GET / Works with variables 1`] = `
+Object {
+  "data": Object {
+    "test": Object {
+      "id": "2345",
+      "name": "Test name",
+    },
+  },
+}
+`;
