@@ -31,7 +31,7 @@ const measureRequestTime = (req, res, next) => {
 
 app.use(measureRequestTime);
 
-app.use('/static', express.static(path.resolve(__dirname, 'static')));
+app.use('/static', express.static(path.resolve(__dirname, 'static'), { etag: false, maxAge: 365 * 24 * 60 * 60 * 1000 }));
 
 app.get('/', (req, res) => {
     res.render('index', {});
